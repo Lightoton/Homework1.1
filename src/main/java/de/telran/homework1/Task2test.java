@@ -6,13 +6,11 @@ public class Task2test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int integer;
-
         do {
             System.out.println("Введите трехзначное число ");
             integer= scanner.nextInt();
         } while (integer<100||integer>999);
         System.out.println("Вы ввели числo: "+ integer);
-        int myInt = integer;
         int hundreds = (integer/ 100);
         int dozens = (integer%100/ 10);
         int units = (integer% 10);
