@@ -12,11 +12,11 @@ public class Task2test {
         } while (integer<100||integer>999);
         System.out.println("Вы ввели числo: "+ integer);
         int hundreds = (integer/ 100);
-        int dozens = (integer%100/ 10);
+        int Tens = (integer%100/ 10);
         int units = (integer% 10);
 
         System.out.println("Сотни: "+hundreds);
-        System.out.println("Десятки: "+dozens);
+        System.out.println("Десятки: "+Tens);
         System.out.println("Единицы: "+units);
         scanner.close();
 
