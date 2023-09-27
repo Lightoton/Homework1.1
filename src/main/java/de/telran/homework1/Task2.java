@@ -10,6 +10,7 @@ public class Task2 {
         System.out.println("Hundreds:" + hundreds);
         System.out.println("Tens:" + tens);
         System.out.println("Units:" + units);
+        System.out.print("Число 345 -> " +hundreds+"," +tens+","+units );
 
 
     }
