@@ -7,7 +7,7 @@ public class Task2test {
         Scanner scanner = new Scanner(System.in);
         int integer;
         do {
-            System.out.println("Введите трехзначное число ");
+            System.out.print("Введите трехзначное число: ");
             integer= scanner.nextInt();
         } while (integer<100||integer>999);
         System.out.println("Вы ввели числo: "+ integer);
