@@ -11,9 +11,9 @@ public class Task2test {
             myInt= scanner.nextShort();
         } while (myInt<100||myInt>999);
         System.out.println("Вы ввели числo: "+ myInt);
-        short hundreds = (short) (myInt/ 100);
-        short tens = (short) (myInt%100/ 10);
-        short units = (short) (myInt% 10);
+        int hundreds =  (myInt/ 100);
+        int tens =  (myInt%100/ 10);
+        int units =  (myInt% 10);
 
         System.out.println("Сотни: "+hundreds);
         System.out.println("Десятки: "+tens);
