@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class Task2test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int integer;
+        int myInt;
         do {
             System.out.print("Введите трехзначное число: ");
-            integer= scanner.nextInt();
-        } while (integer<100||integer>999);
-        System.out.println("Вы ввели числo: "+ integer);
-        int hundreds = (integer/ 100);
-        int tens = (integer%100/ 10);
-        int units = (integer% 10);
+            myInt= scanner.nextShort();
+        } while (myInt<100||myInt>999);
+        System.out.println("Вы ввели числo: "+ myInt);
+        short hundreds = (short) (myInt/ 100);
+        short tens = (short) (myInt%100/ 10);
+        short units = (short) (myInt% 10);
 
         System.out.println("Сотни: "+hundreds);
         System.out.println("Десятки: "+tens);
         System.out.println("Единицы: "+units);
-        System.out.println("Число " + integer+"->"+hundreds+","+tens+","+units);
+        System.out.println("Число " + myInt+"->"+hundreds+","+tens+","+units);
         scanner.close();
 
     }

@@ -6,14 +6,14 @@ public class Task1 {
         processString(myStr);
     }
         public static void processString(String myStr) {
-        System.out.println("Пред-последний символ строки: " + myStr.charAt(18));
+        System.out.println("Пред-последний символ строки: " + myStr.charAt(17));
         System.out.println("Содержит ли строка подстроку Java: " + myStr.contains("Java"));
         String myStr1 = myStr.substring(14, 18);
         System.out.println(myStr1);
-        String jovo = myStr1.replace('a', 'o');
-        System.out.println(jovo);
-        System.out.println(jovo.toUpperCase());
-        System.out.println(jovo.toLowerCase());
+        String myStr2 = myStr.replace('a', 'o');
+        System.out.println(myStr2);
+        System.out.println(myStr.toUpperCase());
+        System.out.println(myStr.toLowerCase());
 
 
 
