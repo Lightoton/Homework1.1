@@ -5,23 +5,34 @@ import java.util.Scanner;
 public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int arg1;
-        int arg2;
-        System.out.println("Введите первую переменную: ");
-        arg1 = scanner.nextInt();
-        System.out.println("Введите вторую переменную: ");
-        arg2 = scanner.nextInt();
-        int sum = arg1 + arg2;
-        int dif = arg1 - arg2;
-        int mult = arg1 * arg2;
-        int div = arg1 / arg2;
-        System.out.println("Сумма= "+sum);
-        System.out.println("Разность= "+dif);
-        System.out.println("Произведение= "+mult);
-        System.out.println("Частное= "+div);
-
-
+        System.out.print("Введите первый аргумент: ");
+        int arg1 = scanner.nextInt();
+        System.out.print("Введите второй аргумент: ");
+        int arg2 = scanner.nextInt();
+        int sumReturn = sum(arg1, arg2);
+        System.out.println("Cумма: "+ sumReturn);
+        int difReturn = dif(arg1, arg2);
+        System.out.println("Разность: "+ difReturn);
+        int multReturn = mult(arg1, arg2);
+        System.out.println("Произведение: "+ multReturn);
+        int divResult = div(arg1,arg2);
+        System.out.println("Частное: "+ divResult);
     }
+
+    public static int sum(int a, int b){
+        return a+b;
+    }
+    public static int dif(int a, int b){
+        return a-b;
+    }
+    public static int mult(int a, int b){
+        return a*b;
+    }
+    public static int div(int a, int b){
+        return a/b;
+    }
+
+
 }
 //№ 2
 //Создайте методы с математическими операциями +, -, *, /
