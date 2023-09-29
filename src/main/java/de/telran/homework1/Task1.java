@@ -2,21 +2,21 @@ package de.telran.homework1;
 
 public class Task1 {
     public static void main(String[] args) {
-        char Character = 'G';
-        int Integer = 89;
-        byte Byte = 4;
-        short Short = 56;
-        float Float = 4.7333436F;
-        double Double = 4.355453532;
-        long Long = 12121;
+        char myCharacter = 'G';
+        int myInteger = 89;
+        byte myByte = 4;
+        short myShort = 56;
+        float myFloat = 4.7333436F;
+        double myDouble = 4.355453532;
+        long myLong = 12121;
 
-        System.out.println("Character:" + Character);
-        System.out.println("Integer:" + Integer);
-        System.out.println("Byte:" + Byte );
-        System.out.println("Short:" + Short);
-        System.out.println("Flout:" + Float);
-        System.out.println("Double:" + Double);
-        System.out.println("Long:" + Long);
+        System.out.println("Character:" + myCharacter);
+        System.out.println("Integer:" + myInteger);
+        System.out.println("Byte:" + myByte );
+        System.out.println("Short:" + myShort);
+        System.out.println("Flout:" + myFloat);
+        System.out.println("Double:" + myDouble);
+        System.out.println("Long:" + myLong);
     }
 }
 //В методе main инициализировать все примитивные типы.
