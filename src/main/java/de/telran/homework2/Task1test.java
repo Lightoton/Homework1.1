@@ -11,7 +11,7 @@ public class Task1test {
         System.out.println("Пред-последний символ строки: " + myStr.charAt(myStr.length()-2));
         System.out.println("Содержит ли строка подстроку Java: " + myStr.contains("Java"));
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите слово или символ который нужно вырезать из строки: ");
+        System.out.print("Введите слово или символ, который нужно вырезать из строки: ");
         String searchStr = scanner.next();
         int startIndex = myStr.indexOf(searchStr);
         int endIndex = startIndex+ searchStr.length();
