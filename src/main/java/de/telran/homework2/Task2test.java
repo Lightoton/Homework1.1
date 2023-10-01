@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Task2test {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         int arg1;
         int arg2;
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первую переменную: ");
         arg1 = scanner.nextInt();
         System.out.println("Введите вторую переменную: ");
@@ -15,13 +15,13 @@ public class Task2test {
         int dif = arg1 - arg2;
         int mult = arg1 * arg2;
         int div = arg1 / arg2;
-        System.out.println("Сумма= "+sum);
-        System.out.println("Разность= "+dif);
-        System.out.println("Произведение= "+mult);
-        System.out.println("Частное= "+div);
+        System.out.println("Сумма= " + sum);
+        System.out.println("Разность= " + dif);
+        System.out.println("Произведение= " + mult);
+        System.out.println("Частное= " + div);
+
+
+        }
 
 
     }
-
-
-}
