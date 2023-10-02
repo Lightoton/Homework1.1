@@ -19,16 +19,16 @@ public class Task2 {
         System.out.println("Частное: "+ divResult);
     }
 
-    public static int sum(int a, int b){
+     static int sum(int a, int b){
         return a+b;
     }
-    public static int dif(int a, int b){
+     static int dif(int a, int b){
         return a-b;
     }
-    public static int mult(int a, int b){
+     static int mult(int a, int b){
         return a*b;
     }
-    public static int div(int a, int b){
+     static int div(int a, int b){
         return a/b;
     }
 

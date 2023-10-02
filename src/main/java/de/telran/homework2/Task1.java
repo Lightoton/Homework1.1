@@ -10,7 +10,9 @@ public class Task1 {
         System.out.println("Содержит ли строка подстроку Java: " + myStr.contains("Java"));
         String searchStr = "Java";
         int startIndex = myStr.indexOf(searchStr);
+            System.out.println(startIndex);
         int endIndex = startIndex+ searchStr.length();
+            System.out.println(endIndex);
         String myStr1 = myStr.substring(startIndex, endIndex);
             System.out.println(myStr1);
         String myStr2 = myStr.replace('a', 'o');
