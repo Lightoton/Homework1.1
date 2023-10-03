@@ -15,7 +15,7 @@ public class Task1 {
             return;
         }
 
-        System.out.print("Введите  второе слово с чётным количеством символов: ");
+        System.out.print("Напишите  второе слово с чётным количеством символов: ");
         String myStr2 = scanner.next();
         int myLength2 = myStr2.length();
         if (myLength2 %2 ==0){
