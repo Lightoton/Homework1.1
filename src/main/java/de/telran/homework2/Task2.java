@@ -15,8 +15,12 @@ public class Task2 {
         System.out.println("Разность: "+ difReturn);
         int multReturn = mult(arg1, arg2);
         System.out.println("Произведение: "+ multReturn);
-        int divResult = div(arg1,arg2);
-        System.out.println("Частное: "+ divResult);
+        int divResult;
+
+        divResult = div(arg1,arg2);
+        if (difReturn == 0) {
+            System.out.println("Частное: " + divResult);
+        }else System.out.println("Частное: ошибка! Делить на ноль нельзя!");
     }
 
      static int sum(int a, int b){
@@ -28,9 +32,12 @@ public class Task2 {
      static int mult(int a, int b){
         return a*b;
     }
-     static int div(int a, int b){
-        return a/b;
-    }
+     static int div(int a, int b) {
+        if (b!=0) {
+            return a / b;
+        } else
+            return 0;
+     }
 
 
 }
