@@ -15,10 +15,10 @@ public class Task2 {
         System.out.println("Разность: "+ difReturn);
         int multReturn = mult(arg1, arg2);
         System.out.println("Произведение: "+ multReturn);
-        int divResult;
 
-        divResult = div(arg1,arg2);
-        if (difReturn == 0) {
+
+        int divResult = div(arg1,arg2);
+        if (divResult != 0) {
             System.out.println("Частное: " + divResult);
         }else System.out.println("Частное: ошибка! Делить на ноль нельзя!");
     }

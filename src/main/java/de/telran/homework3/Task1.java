@@ -27,6 +27,7 @@ public class Task1 {
         int myHalfStr1 = myLength1/2;
         int myHalfStr2 = myLength2/2;
 
+
         System.out.println("Ваше новое слово состоящее из половинок первого и второго: "+myStr1.substring(0,myHalfStr1)+myStr2.substring(myHalfStr2));
 
     }

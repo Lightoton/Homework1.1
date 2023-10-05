@@ -16,8 +16,8 @@ public class Task2 {
 
     }
 
-    static void printSum(int a, int b){
-        int sum = a+b;
+    static void printSum(int arg1, int arg2){
+        int sum = arg1+arg2;
         System.out.println("Сумма= "+sum);
     }
     static void printDif(int a, int b){
@@ -30,10 +30,10 @@ public class Task2 {
         System.out.println("Произведение= "+mult);
     }
     static void printDiv(int a, int b) {
-        if (b!=0) {
-            double div = (double) a/b;
+        if (b != 0) {
+            double div = (double) a / b;
 
-            System.out.println("Частное= "+div);
+            System.out.println("Частное= " + div);
         } else
             System.out.println("Частное= Ошибка!!! Делить на ноль нельзя!!!");
 
