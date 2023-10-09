@@ -36,7 +36,7 @@ public class Task2 {
     }
 
     static int countTheMinutes(int second){
-        return second/100;
+        return second/60;
     }
     static int countTheHours(int second){
         return second/3600;
