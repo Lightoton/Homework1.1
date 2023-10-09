@@ -12,7 +12,9 @@ public class Task1 {
         double numberReturn = calculationNumber(num1,num2);
         if (numberReturn==0){
             System.out.println("Оба числа одинаково близки к 10! ");
-        }else   System.out.println(numberReturn+" ближе к 10");
+        }else {
+            System.out.println(numberReturn + " ближе к 10");
+        }
 
     }
     static double calculationNumber (double num1, double num2){
@@ -26,6 +28,7 @@ public class Task1 {
             return num1;
         }else
             return num2;
+
 
     }
 
