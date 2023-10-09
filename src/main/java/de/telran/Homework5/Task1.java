@@ -9,25 +9,25 @@ public class Task1 {
         double num1 = scanner.nextDouble();
         System.out.print("Введите второе число: ");
         double num2 = scanner.nextDouble();
-        System.out.println(calculationNumber(num1,num2)+" ближе к 10");
-
-
+        double numberReturn = calculationNumber(num1,num2);
+        if (numberReturn==0){
+            System.out.println("Оба числа одинаково близки к 10! ");
+        }else   System.out.println(numberReturn+" ближе к 10");
 
     }
-    static double calculationNumber (double a, double b){
-        double result1 = Math.abs(a-10);
-        double result2 = Math.abs(b-10);
+    static double calculationNumber (double num1, double num2){
+        double result1 = Math.abs(num1-10);
+        double result2 = Math.abs(num2-10);
+        if (result1==result2){
+            return 0;
+
+        }
         if (result1 < result2){
-            return a;
+            return num1;
         }else
-            return b;
+            return num2;
 
     }
-
-
-
-
-
 
 }
 

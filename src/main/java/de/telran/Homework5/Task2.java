@@ -8,25 +8,26 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         Random random=new Random();
         int second = random.nextInt(28800);
-        System.out.print("Вы понимаете оставшееся время в секундах? 'y'или'n' ");
+        System.out.print("Вы понимаете оставшееся время в секундах? 'y'или'n':");
         String inChar = scanner.next().toUpperCase();
         if (inChar.contains("Y")){
             System.out.println("До конца рабочего для осталось "+second+" секунд.");
 
         }
         if (inChar.contains("N")){
-            if (countTheMinutes(second)<=60){
+            if (countTheMinutes(second)<60){
                 System.out.println("Осталось менее часа!");
                 System.out.println("Осталось в минутах: "+countTheMinutes(second));
             }
             if (countTheHours(second)==1){
-                System.out.println("До конца рабочего дня осталось "+countTheHours(second)+" час");
+                System.out.println("До конца рабочего дня остался "+countTheHours(second)+" час");
 
             }
             if (countTheHours(second)>1 && countTheHours(second)<5 ){
                 System.out.println("До конца рабочего дня осталось "+countTheHours(second)+" часа");
 
-            }if (countTheHours(second)>4) {
+            }
+            if (countTheHours(second)>4) {
                 System.out.println("До конца рабочего дня осталось " + countTheHours(second) + " часов");
             }
 
