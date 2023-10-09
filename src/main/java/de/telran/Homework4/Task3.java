@@ -7,9 +7,9 @@ public class Task3 {
         double currentExchangeRateEuroToDollar = 1.05;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите сумму в Евро, которую хотите конвертировать в Доллары США: ");
-        double customEuro = scanner.nextInt();
+        double customEuro = scanner.nextDouble();
         double resultExchange = toDollars(customEuro,currentExchangeRateEuroToDollar);
-        System.out.println(customEuro+"Euro = "+resultExchange+" Dollars");
+        System.out.println(customEuro+" Euro = "+resultExchange+" Dollars");
 
     }
     static double toDollars(double euro, double exchange){

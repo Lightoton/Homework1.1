@@ -28,7 +28,6 @@ public class Task1 {
 
 
 
-
     }
     static String convertNumber(int a, int b, int c){
         long result1 = Long.parseLong(String.valueOf(a),b);

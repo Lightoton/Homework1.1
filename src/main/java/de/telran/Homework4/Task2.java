@@ -14,10 +14,10 @@ public class Task2 {
     }
     static int thereWillBeExtraCalories (int a, int b){
         int caloriesPerSquareCm= 40;
-        int caloriesInFirstPizza= (int) ((3.14 * a*a/4))*caloriesPerSquareCm;
-        int caloriesInSecondPizza= (int) ((3.14 * b*b/4))*caloriesPerSquareCm;
-        int thereWillBeExtraCalories= Math.abs(caloriesInFirstPizza-caloriesInSecondPizza);
-        return thereWillBeExtraCalories;
+        int caloriesInFirstPizza= (int) ((Math.PI * a*a/4))*caloriesPerSquareCm;
+        int caloriesInSecondPizza= (int) ((Math.PI * b*b/4))*caloriesPerSquareCm;
+        int thereWillBeExtraCalorie= Math.abs(caloriesInFirstPizza-caloriesInSecondPizza);
+        return thereWillBeExtraCalorie;
 
     }
 }
