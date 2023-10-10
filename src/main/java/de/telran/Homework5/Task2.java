@@ -18,15 +18,15 @@ public class Task2 {
             if (countTheMinutes(second)<60){
                 System.out.println("Осталось менее часа!");
                 System.out.println("Осталось в минутах: "+countTheMinutes(second));
-            }
+            }else
             if (countTheHours(second)==1){
                 System.out.println("До конца рабочего дня остался "+countTheHours(second)+" час");
 
-            }
+            }else
             if (countTheHours(second)>1 && countTheHours(second)<5 ){
                 System.out.println("До конца рабочего дня осталось "+countTheHours(second)+" часа");
 
-            }
+            }else
             if (countTheHours(second)>4) {
                 System.out.println("До конца рабочего дня осталось " + countTheHours(second) + " часов");
             }
