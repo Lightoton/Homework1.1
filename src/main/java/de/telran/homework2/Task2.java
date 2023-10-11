@@ -18,7 +18,7 @@ public class Task2 {
 
 
         int divResult = div(arg1,arg2);
-        if (divResult != 0) {
+        if (divResult != Integer.MIN_VALUE) {
             System.out.println("Частное: " + divResult);
         }else System.out.println("Частное: ошибка! Делить на ноль нельзя!");
     }
@@ -36,7 +36,7 @@ public class Task2 {
         if (b!=0) {
             return a / b;
         } else
-            return 0;
+            return Integer.MIN_VALUE;
      }
 
 

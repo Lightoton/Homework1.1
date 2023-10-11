@@ -34,6 +34,8 @@ public class Task1 {
         return Long.toString(result1,c);
 
     }
+
+
 }
 //В Task1Scanner сделал тоже самое, только с вводом пользователя.
 //Переведите число 333 из 16-ричной в 10-ричную
