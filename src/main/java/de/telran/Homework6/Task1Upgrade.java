@@ -17,10 +17,10 @@ public class Task1Upgrade {
                 System.out.println("Магазины закрыты!");
     }
     static int canBuy (boolean edeka, boolean rewe){
-        if (edeka==true){
+        if (edeka){
             return 1;
         }else
-            if (rewe==true){
+            if (rewe){
                 return 2;
             }else
                 return 0;

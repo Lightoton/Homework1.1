@@ -7,16 +7,10 @@ public class Task1 {
         Random random = new Random();
         boolean isEdekaOpen = random.nextBoolean();
         boolean isReweOpen = random.nextBoolean();
-        boolean resultCanBuy = canBuy(isEdekaOpen,isReweOpen);
-        if (resultCanBuy== true){
-            System.out.println("Я могу купить еду!");
-        }else System.out.println("Магазины закрыты!");
+        System.out.println(canBuy(isEdekaOpen, isReweOpen) ? "Я могу купить еду!" : "Магазины закрыты!");
     }
     static boolean canBuy (boolean edeka, boolean rewe){
-        if (edeka==true || rewe==true){
-            return true;
-        }else
-            return false;
+        return edeka || rewe;
 
 
     }
