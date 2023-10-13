@@ -12,14 +12,7 @@ public class Task3 {
         System.out.print("Введите третье число: ");
         int num3= scanner.nextInt();
         int resultGetMax = getMax(num1,num2,num3);
-        if (resultGetMax ==num1){
-            System.out.println(num1+" наибольшее число!");
-        } else if (resultGetMax ==num2) {
-            System.out.println(num2+" наибольшее число!");
-        } else if (resultGetMax ==num3) {
-            System.out.println(num3+" наибольшее число!");
-        }else
-            System.out.println("Упс! Что-то пошло не так!");
+        System.out.println(resultGetMax + " наибольшее число!");
 
     }
     static int getMax (int num1,int num2,int num3){
@@ -27,9 +20,9 @@ public class Task3 {
             return num1;
         } else if (num2>num1 && num2>num3) {
             return num2;
-        } else if (num3>num1 && num3>num2) {
+        } else
             return num3;
-        }else return Integer.MIN_VALUE;
+
 
     }
 }

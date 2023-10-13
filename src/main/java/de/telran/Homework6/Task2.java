@@ -7,21 +7,19 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите год который вас интересует: ");
         int year = scanner.nextInt();
-        if (isLeap(year)==Integer.MIN_VALUE ){
-            System.out.println("Год "+year+" не високосный!");
+        if (isLeap(year) == false) {
+            System.out.println("Год " + year + " не високосный!");
 
-        }else
-            System.out.println("Год "+year+" високосный");
+        } else
+            System.out.println("Год " + year + " високосный");
 
     }
-    static int isLeap(int year){
-        if (year%4==0 && year%100!=0 ){
-            return Integer.MAX_VALUE;
-        }else
-                if (year%400!=0){
-                    return Integer.MIN_VALUE;
-                }else
-                    return Integer.MAX_VALUE;
+
+    static boolean isLeap(int year) {
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            return true;
+        }
+        return false;
     }
 }
 //Реализуйте программу, которая попросит пользователя ввести год
