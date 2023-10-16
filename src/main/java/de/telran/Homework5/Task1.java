@@ -9,6 +9,8 @@ public class Task1 {
         double num1 = scanner.nextDouble();
         System.out.print("Введите второе число: ");
         double num2 = scanner.nextDouble();
+
+
         double numberReturn = calculationNumber(num1,num2);
         if (numberReturn==0){
             System.out.println("Оба числа одинаково близки к 10! ");
@@ -17,13 +19,13 @@ public class Task1 {
         }
 
     }
-    static double calculationNumber (double num1, double num2){
+     static double calculationNumber (double num1, double num2){
         double result1 = Math.abs(num1-10);
         double result2 = Math.abs(num2-10);
         if (result1==result2){
             return 0;
 
-        }
+        }else
         if (result1 < result2){
             return num1;
         }else
