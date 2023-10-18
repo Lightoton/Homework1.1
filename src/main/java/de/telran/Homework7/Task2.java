@@ -2,7 +2,7 @@ package de.telran.Homework7;
 
 public class Task2 {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 21;
         System.out.println("За "+getHowManyOperations(n)+" дней вы снимите "+n+" доллар");
 
     }
