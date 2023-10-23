@@ -6,17 +6,12 @@ public class Task2 {
     public static void main(String[] args) {
         int[] arr = new int[5];
         OutputArrayResults outputArrayResults = new OutputArrayResults();
-        outputArrayResults.printArrayInterval(arr,10,99);
-        if (outputArrayResults.getArrayIncreases(arr)){
+        outputArrayResults.printArrayWithInterval(arr,10,99);
+        if (outputArrayResults.isArrayIncreases(arr)){
             System.out.println("Массив является строго возрастающей последовательностью.");
         }else
             System.out.println("Массив не является строго возрастающей последовательностью.");
-
-
-
     }
-
-
 }
 
 //№2.

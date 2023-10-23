@@ -6,10 +6,8 @@ public class Task1 {
     public static void main(String[] args) {
         int[] arr = new int[8];
         OutputArrayResults outputArrayResults = new OutputArrayResults();
-        outputArrayResults.printArrayInterval(arr,1,50);
-        outputArrayResults.printWithZero(arr);
-
-
+        outputArrayResults.printArrayWithInterval(arr,1,50);
+        outputArrayResults.printArrayWithZero(arr);
     }
 }
 //№1.

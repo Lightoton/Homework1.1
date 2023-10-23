@@ -7,9 +7,9 @@ public class Task2 {
 
     }
     public static int getMaxDivider(int n){
-        int divider;
+//        int divider;
         int maxDivider=1;
-        for (divider = 1; divider < n; divider++) {
+        for (int divider = 1; divider < n; divider++) {
             if (n % divider == 0) {
                 maxDivider = divider;
             }
