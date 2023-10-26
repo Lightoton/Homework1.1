@@ -9,7 +9,7 @@ public class HWMethods {
 
         for (int i = 0; i < arr.length-1; i++) {
             if (++arr[i] !=arr[i+1]){
-                soughtFor = (arr[i+1])-1;
+                soughtFor = arr[i];
                 break;
             }
             if (soughtFor==0){
@@ -51,8 +51,8 @@ public class HWMethods {
 
 
 
-    public static String[] getStrArray(String car) {
-        return car.split(",\\s*");
+    public static String[] getStrArray(String str) {
+        return str.split(",\\s*");
     }
 
     public static void printBottomLine(String[] str){
@@ -61,7 +61,7 @@ public class HWMethods {
         for (int i = 0; i < str.length; i+=2) {
             String str1= str[i];
             String str2= str[i+1];
-            if (Objects.equals(str2, "null")){
+            if (Objects.equals(str2, "null")||Objects.equals(str2, null)){
                 continue;
             }
             if (!firstTimeCondition) {

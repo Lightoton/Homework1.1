@@ -7,6 +7,10 @@ import java.util.Arrays;
 public class Task2 {
     public static void main(String[] args) {
         String car = "model, V-60, country, Germany, city, Berlin, year, null, active, true";
+        String users ="{\"id\", 1, \"country\", null, \"city\", \"Helsinki\", \"year\", null}";
+        String[] user = HWMethods.getStrArray(users);
+        System.out.println(Arrays.toString(user));
+        HWMethods.printBottomLine(user);
         String[] cars =HWMethods.getStrArray(car);
         System.out.println(Arrays.toString(cars));
         HWMethods.printBottomLine(cars);
