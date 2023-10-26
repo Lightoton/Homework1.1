@@ -1,5 +1,6 @@
 package de.telran.Homework9.Methods;
 
+import java.util.Objects;
 import java.util.Random;
 
 public class HWMethods {
@@ -49,20 +50,25 @@ public class HWMethods {
     }
 
 
+
+    public static String[] getStrArray(String car) {
+        return car.split(",\\s*");
+    }
+
     public static void printBottomLine(String[] str){
         StringBuilder resultStr = new StringBuilder("SELECT * FROM cars WHERE ");
-        boolean condition=true;
+        boolean firstTimeCondition=true;
         for (int i = 0; i < str.length; i+=2) {
             String str1= str[i];
             String str2= str[i+1];
-            if (str2==null){
+            if (Objects.equals(str2, "null")){
                 continue;
             }
-            if (!condition) {
+            if (!firstTimeCondition) {
                 resultStr.append(" AND ");
             }
             resultStr.append(str1).append(" = ").append(str2);
-            condition=false;
+            firstTimeCondition=false;
 
 
         }

@@ -6,16 +6,20 @@ import java.util.Arrays;
 
 public class Task2 {
     public static void main(String[] args) {
-        String[] cars = {"model", "V-60", "country", "Germany", "city", "Berlin", "year", null, "active", String.valueOf(true)};
+        String car = "model, V-60, country, Germany, city, Berlin, year, null, active, true";
+        String[] cars =HWMethods.getStrArray(car);
+        System.out.println(Arrays.toString(cars));
         HWMethods.printBottomLine(cars);
-        String[] users= {"id", String.valueOf(1), "country", null, "city", "Helsinki", "year", null};
-        HWMethods.printBottomLine(users);
-
-
-
     }
 
+
+
+
+
+
 }
+
+
 //№2
 //Сформировать строку, сходную с  SQL запросом, используя StringBuilder:
 //1) Берем исходную строку с данными из cars

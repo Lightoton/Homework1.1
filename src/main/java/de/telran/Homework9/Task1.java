@@ -17,6 +17,13 @@ public class Task1 {
         System.out.println(Arrays.toString(arr));
         System.out.println("Недостающий элемент цифра: "+HWMethods.getMissingNumber(arr));
 
+        int[] arrTest ={1,2,3,5};
+        System.out.println("Недостающий элемент цифра: "+HWMethods.getMissingNumber(arrTest));
+
+        int[] arrTest2 = {6,1,2,8,3,4,7,10,5};
+        Arrays.sort(arrTest2);
+        System.out.println("Недостающий элемент цифра: "+HWMethods.getMissingNumber(arrTest2));
+
     }
 
 
